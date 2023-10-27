@@ -1,9 +1,9 @@
 import React from "react";
-
+import "../styles/header.css"
 const Nav: React.FC = () => {
 
     return (
-        <div>
+        <div className="header">
             <h3>Merek Verse</h3>
             <nav className="nav">
                 <a href="/" >Home</a>
