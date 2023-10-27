@@ -1,0 +1,65 @@
+.home {
+    margin: 10rem auto;
+}
+
+.hero {
+    background-color: black;
+    color: #fff;
+    height: 200px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 8px;
+
+}
+
+.article {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 60%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(50, 50, 93, 0.1) 1px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 1px 8px 16px -4px;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+}
+
+.skill-card h4 {
+    text-align: center;
+}
+
+.skill-card a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.article h3 {
+    align-self: center;
+}
+
+.article p {
+    padding-left: 5rem;
+}
+
+.button {
+    align-self: center;
+    background-color: black;
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    height: 40px;
+}
