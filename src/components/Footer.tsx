@@ -2,7 +2,6 @@ import React from "react";
 
 import "../styles/footer.css";
 
-import youtubeIcon from "../assets/youtube (1).svg";
 import tikokIcon from "../assets/tiktok.svg";
 import linkedinIcon from "../assets/linkedin-original.svg";
 import githubIcon from "../assets/github.svg";
@@ -16,25 +15,37 @@ const Footer: React.FC = () => {
     return (
 
         <footer className="footer">
-            <section className="footer-section" >
+            <section className="footer-hero">
                 <div>
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Contact</a>
+                    <h2>Merek Verse</h2>
+                    <p>Merek Verse is ...</p>
                 </div>
-                <div>
-                    <a href="">Blog</a>
-                    <a href="">Mentorship</a>
-                </div>
-            </section>
 
-            <section className="footer-icons">
-                <a href=""><img src={youtubeIcon} className="icon" alt="link to YouTube" /></a>
+                <section className="footer-icons">
                 <a href=""><img src={linkedinIcon} className="icon" alt="link to LinkedIn" /></a>
                 <a href=""><img src={tikokIcon} className="icon" alt="link to TikTok" /></a>
                 <a href=""><img src={twitterIcon} className="icon" alt="link to Twitter" /></a>
                 <a href=""><img src={githubIcon} className="icon" alt="link to GitHub" /></a>
                 <a href=""><img src={instagramIcon} className="icon" alt="link to instagram" /></a>
+            </section>
+            </section>
+
+            <section className="footer-section" >
+                <div>
+                    <h4>About Us</h4>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="">Contact Us</a>
+                    <a href="">Buy Me Coffe</a>
+                </div>
+                <div>
+                    <h4>Guides</h4>
+                    <a href="">Mentorship</a>
+                    <a href="">YouTube Channel</a>
+                </div>
             </section>
 
             
