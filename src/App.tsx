@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Nav from './components/Header'
 import Home from './pages/Home'
 import Skills from "./pages/Skills";
+import NotFound from "./pages/NotFound";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Routes >
         <Route path="/" Component={Home} />
         <Route path="/skills" Component={Skills} />
+        <Route path="*" Component={NotFound} />
       </Routes>
       
       <Footer />
