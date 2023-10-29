@@ -6,15 +6,21 @@
 .skill-category {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    gap: 1rem;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+
+}
+
+.skill-category h3 {
+    align-self: center;
 }
 
 .skills-section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -39,6 +45,9 @@
     rgba(0, 0, 0, 0.25) 1px 8px 16px -4px;
     padding-left: 2rem;
     padding-bottom: 1rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
 }
 
 
