@@ -183,7 +183,7 @@ const Skills: React.FC = () => {
                         <p>A brief introduction about the skill...</p>
 
                         <Link to="/skills/music" className="link" >
-                            Music
+                            View full details
                         </Link>
                     </section>
                 </section>
