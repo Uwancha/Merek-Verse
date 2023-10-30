@@ -1,11 +1,11 @@
 import React from "react";
-
+import "../styles/about.css";
 
 const About: React.FC = () => {
 
     return (
-        <div>
-            <section>
+        <div className="about">
+            <section className="about-section">
                 <h2>About Us</h2>
                 <p>
                     Merek is ldjld dfljdlkv lkvlkvj dflvjkdfkl dkljkvdlv
@@ -13,7 +13,7 @@ const About: React.FC = () => {
                 </p>
             </section>
 
-            <section>
+            <section className="about-section">
                 <h4>What this site contains</h4>
                 <ul>
                     <li>

@@ -1,0 +1,20 @@
+.about {
+    margin-top: 10rem;
+}
+
+.about h2 {
+    align-self: center;
+}
+
+.about h4 {
+    padding-left: 2rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
