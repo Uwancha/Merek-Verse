@@ -26,10 +26,11 @@
 
 .link {
     text-decoration: none;
+    color: tomato;
 }
 
 .link:visited {
-    color: chocolate;
+    color: palevioletred;
 }
 
 .link:hover {
