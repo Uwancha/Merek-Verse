@@ -3,8 +3,8 @@
 }
 
 .hero {
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: lightslategray;
     height: 200px;
     text-align: center;
     width: 60%;
@@ -15,6 +15,9 @@
 
     border-radius: 8px;
 
+    box-shadow: rgba(50, 50, 93, 0.1) 1px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 1px 8px 16px -4px;
+    
 }
 
 .article {
@@ -55,11 +58,19 @@
 
 .button {
     align-self: center;
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
 
     border: none;
+    border: solid 2px black;
+
     border-radius: 8px;
     width: 30%;
     height: 40px;
+
+    transition: all 1s;
+}
+
+.button:hover {
+    background-color: black;
+    color: lightslategray;
 }
