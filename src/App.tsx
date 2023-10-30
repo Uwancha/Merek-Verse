@@ -7,6 +7,7 @@ import Nav from './components/Header'
 import Home from './pages/Home'
 import Skills from "./pages/Skills";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Routes >
         <Route path="/" Component={Home} />
         <Route path="/skills" Component={Skills} />
+        <Route path="/about" Component={About} />
         <Route path="*" Component={NotFound} />
       </Routes>
       
