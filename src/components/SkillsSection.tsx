@@ -11,7 +11,7 @@ const SkillsSection = ({cards}: Props) => {
     return (
         <section className="skills-section">
             {cards.map(card => (
-            <SkillCard key={card.id} {...card} />
+            <SkillCard key={card.name} {...card} />
             ))}
         </section>
     );
