@@ -2,6 +2,8 @@ import React from 'react';
 import {Card} from '../interfaces/Card';
 import SkillCard from './SkillCard';
 
+import "../styles/skills-section.css";
+
 interface Props {
     cards: Card[];
 }
