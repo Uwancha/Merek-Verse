@@ -2,6 +2,8 @@ import React from 'react';
 import {Card} from '../interfaces/Card';
 import SkillsSection from './SkillsSection';
 
+import "../styles/skills-category.css";
+
 interface Props {
     title: string;
     cards: Card[];
