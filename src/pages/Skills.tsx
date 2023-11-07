@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/skills.css";
-
-
-import { db } from "../store";
-import { collection, getDocs } from "@firebase/firestore";
 import SkillsCategory from "../components/SkillCategory";
 
+import { useSelector, useDispatch } from 'react-redux';
+import { getSkills } from "../actions/skillsAction"
+import { Content } from "../interfaces/SkillsInterface";
 
-const querySnapshot = await getDocs(collection(db, 'skills'));
 
 const Skills: React.FC = () => {
+    const dispatch = useDispatch();
     
-    const skills = querySnapshot.docs.map(doc => doc.data());
-
-    console.log(skills)
+    useEffect(() => {
+        dispatch(getSkills());
+        }, [dispatch]);
+        
+    const skills: Content[] = useSelector((state) => state.skills);
 
     return (
         <div className="skills">
