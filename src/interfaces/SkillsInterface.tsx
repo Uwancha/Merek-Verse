@@ -1,6 +1,6 @@
 export interface Content  {
     category: string;
-    IT: string[];
+    IT: [];
   };
   
 export interface Posts {
