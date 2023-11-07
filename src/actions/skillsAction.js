@@ -14,8 +14,6 @@ export const getSkills = () => async dispatch => {
       });
     });
 
-    console.log(skills);
-
     dispatch({
         type: 'GET_SKILLS',
         payload: skills
