@@ -6,14 +6,15 @@ import "../styles/skills-section.css";
 
 interface Props {
     cards: Card[];
+    category: string
 }
 
-const SkillsSection = ({cards}: Props) => {
+const SkillsSection: React.FC<Props>= ({cards, category}: Props) => {
 
     return (
         <section className="skills-section">
             {cards.map(card => (
-            <SkillCard key={card.name} {...card} />
+            <SkillCard key={card.name} {...card} category={category} />
             ))}
         </section>
     );
