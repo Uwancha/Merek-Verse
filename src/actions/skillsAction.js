@@ -20,25 +20,39 @@ export const getSkills = () => async dispatch => {
     } );
 }
 
-export const getSkillDetails = (category, skillId) => async (dispatch) => {
-  const categoryDocRef = doc(db, 'skills', category);
+export const getSkillDetails = (category, skillId) => async dispatch => {
   try {
-    const categoryDocSnap = await getDocs(categoryDocRef);
-    if (categoryDocSnap.exists()) {
-      const skillsData = categoryDocSnap.data().skills;
-      const skillDetails = skillsData.find(skill => skill.id === skillId);
-      if (skillDetails) {
-        dispatch({ type: 'GET_SKILL_DETAILS', payload: skillDetails });
-      } else {
-        // Handle if skill not found
-        console.log("Skill not found")
+    const skillsRef = collection(db, 'skills');
+    const skillsSnapshot = await getDocs(skillsRef);
+  
+
+    let specificSkill = null;
+
+    skillsSnapshot.forEach(categoryDoc => {
+      const skills = categoryDoc.data().IT || [];
+      const foundSkill = skills.find(skill => skill.id === skillId);
+      console.log(foundSkill)
+
+      if (foundSkill && categoryDoc.id === category) {
+        specificSkill = foundSkill;
       }
+    });
+
+    if (specificSkill) {
+      dispatch({ type: 'GET_SKILL_DETAILS', payload: specificSkill });
     } else {
-      // Handle if category not found
-      console.log("Category not found")
+      console.log("Skill not found");
     }
   } catch (error) {
-    // Handle error
     console.error('Error getting skill details:', error);
   }
 };
+
+
+
+
+
+
+
+
+
