@@ -1,5 +1,3 @@
-// SkillDetailsPage.js
-
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
