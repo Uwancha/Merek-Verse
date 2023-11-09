@@ -1,6 +1,8 @@
 export interface Content  {
     category: string;
     IT: [];
+    skillsList: [];
+    state: {}
   };
   
 export interface Posts {

@@ -1,7 +1,8 @@
 
 export interface Card {
     name: string;
+    id: number;
     title: string;
     description: string;
-    link: string;
+    category: string;
   }
