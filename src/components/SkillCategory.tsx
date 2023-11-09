@@ -7,14 +7,15 @@ import "../styles/skills-category.css";
 interface Props {
     title: string;
     cards: Card[];
+    category: string
 }
 
-const SkillsCategory = ({title, cards}: Props) => {
+const SkillsCategory: React.FC<Props> = ({title, cards, category}: Props) => {
 
     return (
         <article className="skill-category">
         <h3>{title}</h3>
-        <SkillsSection cards={cards}/>
+        <SkillsSection cards={cards} category={category} />
         </article>
     );
 
