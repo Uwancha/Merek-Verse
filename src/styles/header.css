@@ -9,10 +9,10 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
 }
 
 .nav {
+    align-self: center;
     margin-left: auto;
     margin-right: 15rem;
 
@@ -20,15 +20,17 @@
     gap: 2rem;
 }
 
-.header h3 {
-    color: tomato;
-    font-weight: 700;
+.header-h3 {
+    color: #72b626;
+    font-weight: 900;
     font-size: 24px;
+
+    align-self: center;
 }
 
-.header a {
+.header-a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.504);
+    color: #72b626;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 900;
 }
