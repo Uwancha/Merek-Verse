@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { getSkillDetails } from '../actions/skillsAction';
 
+import "../styles/skills-detail-page.css"
+
 const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
   const { category, skillId } = useParams();
 
@@ -11,25 +13,18 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
   }, [category, skillId, getSkillDetails]);
 
   return (
-    <div>
+    <div className='skillsDetailPage'>
       {skillDetails && (
         <>
-          <h2>{skillDetails.description}</h2>
-          <h4>{skillDetails.name}</h4>
+          <h2>{skillDetails.name}</h2>
           <p>{skillDetails.description}</p>
-          <h2>Industries</h2>
-          <p>{skillDetails.industries}</p>
-          <h2>Roles</h2>
-          <p>{skillDetails.roles}</p>
-          <h2>Career Outlook</h2>
-          <p>{skillDetails.careerOutlook}</p>
-          <h2>Learning Outcomes</h2>
-          <p>{skillDetails.learningOutcomes}</p>
-          <h2>prerequisites</h2>
-          <p>{skillDetails.prerequisites}</p>
-          <h2>Difficulty</h2>
-          <p>{skillDetails.difficulty}</p>
-          <h2>Resources</h2>
+          <p><strong>Industries:</strong> {skillDetails.industries}</p>
+          <p><strong>Roles:</strong> {skillDetails.roles}</p>
+          <p><strong>Career Outlook:</strong> {skillDetails.careerOutlook}</p>
+          <p><strong>Learning Outcomes:</strong> {skillDetails.learningOutcomes}</p>
+          <p><strong>Prerequisites:</strong> {skillDetails.prerequisites}</p>
+          <p><strong>Difficulty:</strong> {skillDetails.difficulty}</p>
+          <h4>Resources</h4>
           <p>{skillDetails.resources && skillDetails.resources.forEach(resource => {
              <div>
              <p>{resource.title}</p>

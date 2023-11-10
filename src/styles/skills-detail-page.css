@@ -1,0 +1,13 @@
+.skillsDetailPage {
+    margin: 10rem auto;
+    width: 50%;
+}
+
+.skillsDetailPage h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skillsDetailPage h3 {
+    padding-left: 2rem;
+}
