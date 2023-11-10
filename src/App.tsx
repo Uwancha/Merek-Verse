@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Skills from "./pages/Skills";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
+import SkillDetailsPage from "./pages/SkillDetailsPage.js";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/skills" Component={Skills} />
           <Route path="/about" Component={About} />
           <Route path="*" Component={NotFound} />
+          <Route path="/skills/category/:category/skill/:skillId" Component={SkillDetailsPage} />
         </Routes>
         <Footer />
       </Router>
