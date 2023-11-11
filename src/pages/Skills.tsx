@@ -18,9 +18,11 @@ const Skills: React.FC = () => {
         
     const skills: Content[] = useSelector((state: Content[]) => state.skills);
 
+    console.log(skills)
+
     return (
         <div className="skills">
-            {skills.length ?
+            {skills.skillsList.length ?
              (<div className="skills-container">{skills.skillsList.map((skill: { category: string; IT: Card[]; }) => (
                 <SkillsCategory title={skill.category} cards={skill.IT} category={skill.category}/>
             ))}</div>) : (<Loading />) }
