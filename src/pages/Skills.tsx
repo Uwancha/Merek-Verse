@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getSkills } from "../actions/skillsAction"
 import { Content } from "../interfaces/SkillsInterface";
 import { Card } from "../interfaces/Card";
+import { Loading } from "../components/Loading";
 
 
 const Skills: React.FC = () => {
@@ -19,9 +20,10 @@ const Skills: React.FC = () => {
 
     return (
         <div className="skills">
-            {skills.skillsList.map((skill: { category: string; IT: Card[]; }) => (
+            {skills.length ?
+             (skills.skillsList.map((skill: { category: string; IT: Card[]; }) => (
                 <SkillsCategory title={skill.category} cards={skill.IT} category={skill.category}/>
-            ))}
+            ))) : (<Loading />) }
         </div>
     )
 }
