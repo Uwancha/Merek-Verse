@@ -3,5 +3,14 @@
    
 }
 
+.skills-container :nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.skills-container :nth-child(even) {
+    background-color: #ddd;
+}
+
+
 
 
