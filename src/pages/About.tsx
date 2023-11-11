@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/about.css";
+import Nav from "../components/Header";
 
 const About: React.FC = () => {
 
     return (
+        <>
+        <Nav />
         <div className="about">
             <section className="about-section">
                 <h2>About Us</h2>
@@ -27,6 +30,7 @@ const About: React.FC = () => {
             </section>
 
         </div>
+        </>
     )
 }
 

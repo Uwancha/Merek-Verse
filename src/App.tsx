@@ -17,7 +17,6 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <Nav />
         <Routes >
           <Route path="/" Component={Home} />
           <Route path="/skills" Component={Skills} />

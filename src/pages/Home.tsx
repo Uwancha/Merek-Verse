@@ -7,11 +7,14 @@ import willAIImage from "../assets/artificial-intelligence-3382507_640.jpg";
 import aiImage from "../assets/artificial-intelligence-6767502_640.jpg";
 import pickSkillsImage from "../assets/cartoon-3082809_640.png";
 import projectIdeasImage from "../assets/website-3374825_640.jpg"
+import Nav from "../components/Header";
 
 
 const Home: React.FC = () => {
     
     return (
+        <>
+        <Nav />
         <div className="home">
             <article className="hero">
                 <h1>
@@ -111,6 +114,7 @@ const Home: React.FC = () => {
 
             </article>
         </div>
+        </>
     )
 }
 
