@@ -1,0 +1,65 @@
+.blog {
+    margin-top: 5rem;
+    padding-top: 5rem; 
+}
+
+.posts {
+    display: grid;
+    row-gap: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.blogCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.1) 1px 13px 7px -18px,
+    rgba(0, 0, 0, 0.25) 1px 8px 16px -8px;
+    background-color: #fff;
+}
+
+.blogCard-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.blogCard h2, .blogCard > p {
+    padding-left: 3rem;
+}
+
+.authorImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.author-date {
+    display: flex;
+    flex-direction: column;
+    color: slategray;
+}
+
+.author-date :first-child {
+    margin-bottom: -1rem;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-left: 3rem;
+    color: slategray;
+}
+
+.cta a {
+    text-decoration: none;
+    font-size: 18px;
+    color: slategray;
+}
+
+.cta a:hover {
+    color: tomato;
+}
