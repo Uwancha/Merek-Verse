@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { getSkillDetails } from '../actions/skillsAction';
 
-import "../styles/skills-detail-page.css"
+import "../styles/skills-detail-page.css";
+import Nav from '../components/Header';
 
 const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
   const { category, skillId } = useParams();
@@ -13,6 +14,8 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
   }, [category, skillId, getSkillDetails]);
 
   return (
+    <>
+    <Nav />
     <div className='skillsDetailPage'>
       {skillDetails && (
         <>
@@ -35,6 +38,7 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
         </>
       )}
     </div>
+    </>
   );
 };
 
