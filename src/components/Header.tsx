@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
   }, []);
 
   const headerStyle = {
-    backgroundColor: scrollPosition > 50 ? '#fff' : 'transparent', 
+    backgroundColor: scrollPosition > 30 ? '#fff' : 'transparent', 
     transition: 'background-color .3s ease',
     position: 'fixed',
     width: '100%',
@@ -29,7 +29,7 @@ const Nav: React.FC = () => {
 
     display: 'flex',
     padding: "0 4rem",
-    borderBottom:scrollPosition > 50 ? 'solid 1px rgba(119, 136, 153, 0.564)' : 'none',
+    boxShadow: 'rgba(50, 50, 93, 0.1) 0px 13px 27px -15px,rgba(0, 0, 0, 0.25) 0px 8px 16px -20px'
 
   }
 
