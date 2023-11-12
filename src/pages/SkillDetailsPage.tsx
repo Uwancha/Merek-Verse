@@ -5,6 +5,7 @@ import { getSkillDetails } from '../actions/skillsAction';
 
 import "../styles/skills-detail-page.css";
 import Nav from '../components/Header';
+import Footer from '../components/Footer';
 
 const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
   const { category, skillId } = useParams();
@@ -38,6 +39,7 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
         </>
       )}
     </div>
+    <Footer />
     </>
   );
 };

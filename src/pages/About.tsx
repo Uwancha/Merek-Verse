@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/about.css";
 import Nav from "../components/Header";
+import Footer from "../components/Footer";
 
 const About: React.FC = () => {
 
@@ -30,6 +31,7 @@ const About: React.FC = () => {
             </section>
 
         </div>
+        <Footer />
         </>
     )
 }

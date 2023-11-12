@@ -8,6 +8,7 @@ import { Content } from "../interfaces/SkillsInterface";
 import { Card } from "../interfaces/Card";
 import { Loading } from "../components/Loading";
 import Nav from "../components/Header";
+import Footer from "../components/Footer";
 
 
 const Skills: React.FC = () => {
@@ -30,6 +31,7 @@ const Skills: React.FC = () => {
                 <SkillsCategory title={skill.category} cards={skill.IT} category={skill.category}/>
             ))}</div>) : (<Loading />) }
         </div>
+        <Footer />
         </>
     )
 }

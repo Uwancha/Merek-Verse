@@ -25,7 +25,6 @@ function App() {
           <Route path="*" Component={NotFound} />
           <Route path="/skills/category/:category/skill/:skillId" Component={SkillDetailsPage} />
         </Routes>
-        <Footer />
       </Router>
     </Provider>
   )
