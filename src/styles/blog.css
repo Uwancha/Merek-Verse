@@ -1,6 +1,14 @@
-.blog {
-    margin-top: 5rem;
-    padding-top: 5rem; 
+.blog-home {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.blog-home > :first-child {
+    position: fixed;
+    margin-left: 2rem;
+    padding: 0 2rem;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.657);
 }
 
 .posts {
