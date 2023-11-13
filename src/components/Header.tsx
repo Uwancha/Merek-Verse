@@ -22,14 +22,15 @@ const Nav: React.FC = () => {
 
   const headerStyle = {
     backgroundColor: scrollPosition > 30 ? '#fff' : 'transparent', 
-    transition: 'background-color .3s ease',
+    transition: 'background-color .5s ease',
     position: 'fixed',
     width: '100%',
     top: 0,
 
     display: 'flex',
     padding: "0 4rem",
-    boxShadow: 'rgba(50, 50, 93, 0.1) 0px 13px 27px -15px,rgba(0, 0, 0, 0.25) 0px 8px 16px -20px'
+    color: scrollPosition > 30 ? "tomato" : "#fff",
+    boxShadow: scrollPosition > 30 ? 'rgba(50, 50, 93, 0.1) 0px 13px 27px -15px,rgba(0, 0, 0, 0.25) 0px 8px 16px -20px' : 'none'
 
   }
 
