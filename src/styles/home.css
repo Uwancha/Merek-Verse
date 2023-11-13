@@ -3,10 +3,7 @@
 }
 
 .hero {
-    background-image: url(../assets/entrepreneur-1340649_1920.jpg);
-    background-position: center;
-    
-    background-color: #fff;
+    background-color: rgba(255, 99, 71, 0.827);
     color: #fff;
     height: 500px;
     text-align: center;
@@ -55,7 +52,7 @@
 
 .article-about h2 {
     text-align: center;
-    color: #72b626;
+    color: tomato;
 }
 
 .article-about p {
