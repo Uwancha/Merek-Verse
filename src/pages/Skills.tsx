@@ -20,16 +20,17 @@ const Skills: React.FC = () => {
         
     const skills: Content[] = useSelector((state: Content[]) => state.skills);
 
-    console.log(skills)
+    if (!skills.skillsList.length ) return <Loading />
 
     return (
         <>
         <Nav />
         <div className="skills">
-            {skills.skillsList.length ?
-             (<div className="skills-container">{skills.skillsList.map((skill: { category: string; IT: Card[]; }) => (
+            {skills.skillsList.map((skill: { category: string; IT: Card[]; }) => (
+                <div>
                 <SkillsCategory title={skill.category} cards={skill.IT} category={skill.category}/>
-            ))}</div>) : (<Loading />) }
+                </div>
+            ))}
         </div>
         <Footer />
         </>
