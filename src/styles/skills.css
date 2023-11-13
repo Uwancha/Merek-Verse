@@ -1,6 +1,15 @@
 .skills {
-    margin-top: 10rem;
-   
+    margin-top: 4rem;
+}
+
+.skills > :nth-child(odd) {
+    background-color: whitesmoke;
+    padding: 4rem 0;
+}
+
+.skills > :nth-child(even) {
+    background-color: #fff;
+    padding: 4rem 0;
 }
 
 
