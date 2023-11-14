@@ -14,6 +14,18 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
     getSkillDetails(category, skillId);
   }, [category, skillId, getSkillDetails]);
 
+  let resourceElements;
+
+if(skillDetails?.resources) {
+  resourceElements = skillDetails.resources.map(resource => (
+    <div key={resource.id}>
+      <p>{resource.title}</p>
+      <p>{resource.type}</p>    
+    </div>
+  ));
+}
+
+
   return (
     <>
     <Nav />
@@ -22,20 +34,8 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
         <>
           <h2>{skillDetails.name}</h2>
           <p>{skillDetails.description}</p>
-          <p><strong>Industries:</strong> {skillDetails.industries}</p>
-          <p><strong>Roles:</strong> {skillDetails.roles}</p>
-          <p><strong>Career Outlook:</strong> {skillDetails.careerOutlook}</p>
-          <p><strong>Learning Outcomes:</strong> {skillDetails.learningOutcomes}</p>
-          <p><strong>Prerequisites:</strong> {skillDetails.prerequisites}</p>
-          <p><strong>Difficulty:</strong> {skillDetails.difficulty}</p>
           <h4>Resources</h4>
-          <p>{skillDetails.resources && skillDetails.resources.forEach(resource => {
-             <div>
-             <p>{resource.title}</p>
-             <p>{resource.type}</p>
-            </div>
-          }) }
-          </p>
+          {resourceElements}
         </>
       )}
     </div>
