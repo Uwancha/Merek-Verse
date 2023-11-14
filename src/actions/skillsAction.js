@@ -31,7 +31,7 @@ export const getSkillDetails = (category, skillId) => async dispatch => {
     skillsSnapshot.forEach(categoryDoc => {
       const skills = categoryDoc.data().IT || [];
       const foundSkill = skills.find(skill => skill.id === skillId);
-      console.log(foundSkill)
+      
 
       if (foundSkill && categoryDoc.id === category) {
         specificSkill = foundSkill;
