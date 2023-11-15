@@ -19,8 +19,14 @@ const SkillDetailsPage = ({ skillDetails, getSkillDetails }) => {
 if(skillDetails?.resources) {
   resourceElements = skillDetails.resources.map(resource => (
     <div key={resource.id}>
-      <p>{resource.title}</p>
-      <p>{resource.type}</p>    
+      <h3>{resource.name}</h3>
+      <p>{resource.website}</p>  
+      <h4>Key Features</h4>
+      <ul>
+        {resource?.features?.map(feat => (
+            <li>{feat}</li>
+        ))}
+      </ul>  
     </div>
   ));
 }
@@ -34,7 +40,7 @@ if(skillDetails?.resources) {
         <>
           <h2>{skillDetails.name}</h2>
           <p>{skillDetails.description}</p>
-          <h4>Resources</h4>
+          <h2>Resources</h2>
           {resourceElements}
         </>
       )}
