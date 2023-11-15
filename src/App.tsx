@@ -3,8 +3,6 @@ import { Provider } from "react-redux";
 import { store } from "../src/store.js"
 
 import './App.css'
-import Footer from './components/Footer'
-import Nav from './components/Header'
 import Home from './pages/Home'
 import Skills from "./pages/Skills";
 import NotFound from "./pages/NotFound";
